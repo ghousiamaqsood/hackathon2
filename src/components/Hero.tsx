@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="w-full flex flex-col items-center text-center mt-6">
       {/* Hero Image */}
       <Image
-        src="/group-115.png"
+        src="/Group115.png"
         alt="Hero Image"
         width={1440}
         height={900}
