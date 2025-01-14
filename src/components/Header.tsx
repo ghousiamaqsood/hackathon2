@@ -73,8 +73,8 @@ const Header = () => {
           <Link href="/product-comparison" className="text-black hover:text-gray-600">
           Product-comparison
           </Link>
-          <Link href="/shopping-card" className="text-black hover:text-gray-600">
-          Shopping-card
+          <Link href="/cart-sidebar" className="text-black hover:text-gray-600">
+          cart-sidebar
           </Link>
         </nav>
 
@@ -202,11 +202,11 @@ const Header = () => {
             </li> 
              <li>
               <Link
-                href="/shopping-card"
+                href="/cart-sidebar"
                 className="block px-4 py-2 hover:bg-gray-200"
                 onClick={toggleMenu}
               >
-              Shopping-card
+              cart-sidebar
               </Link>
             </li> 
           </ul>
