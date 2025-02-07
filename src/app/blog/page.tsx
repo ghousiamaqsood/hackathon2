@@ -27,8 +27,8 @@ export default function Blog() {
           height={600}
           className="rounded-lg "
           style={{
-            width: "100%", // Full width
-            height: "auto", // Maintain aspect ratio
+            width: "100%", 
+            height: "auto", 
             marginTop: "10px",
           }}
         />

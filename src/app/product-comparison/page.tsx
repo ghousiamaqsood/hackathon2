@@ -1,4 +1,6 @@
-"use client";
+"use clinet"
+import React from 'react';
+
 import Image from "next/image";
 
 export default function Card() {
@@ -48,7 +50,7 @@ export default function Card() {
         </div>
         <div>
           <Image
-            src="/Frame16.png"
+            src="/Frame161.png"
             alt="Product 2"
             width={1440}
             height={270}

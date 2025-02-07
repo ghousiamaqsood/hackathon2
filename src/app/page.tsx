@@ -1,34 +1,39 @@
-"use clint"
-import Image from "next/image"
+
+"use client";
+
+import React from "react";
+import Image from "next/image";
+  // یہ وہ راستہ ہے جو آپ نے tsconfig میں سیٹ کیا ہے
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[var(--font-geist-sans)]">
       {/* Main Content */}
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      <div className="relative">
-      <div
-        className="absolute text-2xl font-bold text-gray-400 opacity-50 p-50 ml-40"
-        style={{
-          top: "-110px", // Moves the "Shop" text above the logo
-          left: "-50%", // Horizontally center the "Shop" text
-          transform: "translateX(-50%)", // Ensures that the text is perfectly centered
-        }}
-      >
-         Home
-      </div>
-    
-  
-  </div>
-        <Image
-          className="max-w-full h-auto rounded-lg"
-          src="/Mask Group.jpg"
-          alt="Shop Logo"
-          width={1440}
-          height={716}
-          priority
-          style={{ marginTop: "95.7px" }}
-        />
+      <main className="flex flex-col gap-10 row-start-2 items-center sm:items-start">
+        <div className="relative">
+          {/* Home Text Positioned Over Logo */}
+          <div
+            className="absolute text-2xl font-bold text-gray-400 opacity-50"
+            style={{
+              top: "-280px", // Positioned directly over the logo
+              left: "7%", // Horizontally centered
+              transform: "translateX(-40%)", // Ensures proper centering
+            }}
+          >
+           Home 
+          </div>
+
+          {/* Logo Image */}
+          <Image
+            className="max-w-full h-auto rounded-lg"
+            src="/Mask Group.jpg"
+            alt="Shop Logo"
+            width={1440}
+            height={1200}
+            priority
+            style={{ marginTop: "0px" }} // Removed unnecessary margin
+          />
+        </div>
 
         {/* Group 115 Image */}
         <a
@@ -40,7 +45,7 @@ export default function Home() {
           <Image
             className="max-w-full h-auto"
             src="/Group 115.png"
-            alt="Browser Icon"
+            alt="/pitcuer Icons"
             width={1183}
             height={886}
             style={{
@@ -52,8 +57,7 @@ export default function Home() {
         </a>
       </main>
 
-      
-       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"> 
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         {/* Product Link */}
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -72,9 +76,13 @@ export default function Home() {
               height: "886px",
               marginTop: "32px",
             }}
-          />
-        </a>
+                 />
+                   </a>
+                    <div className="text-center text-2xl text-blue-500">
+                Tailwind CSS is working!
+                </div>
 
+        
         {/* Inspirations Link */}
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -115,43 +123,12 @@ export default function Home() {
               marginTop: "32px",
             }}
           />
-         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="/share"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-          <Image
-            className="max-w-full h-auto"
-            src="/footer 1.png"
-            alt="Footer Icon"
-            width={1799}
-            height={721}
-            style={{
-              width: "1400px",
-              height: "480px",
-              marginTop: "2px",
-            }}
-          />
         </a>
 
-        {/* External Link */}
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
         
-      
-          
-        </a>
-      </footer> 
+      </footer>
     </div>
-
-
-
-);
+  );
 }
+
+
